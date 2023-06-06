@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" type="text/css" href="CSS/all.css">
+    <title>Tienda</title>
+    <style>
+        /* Estilos para pantallas de 200px a 399px */
+        @media screen and (min-width: 200px) and (max-width: 399px) {
+            .principal-logo {
+                max-width: 120px;
+            }
+            h1 {
+                font-size: 16px;
+            }
+            .hero h2 {
+                font-size: 14px;
+            }
+        }
+
+        /* Estilos para pantallas de 400px a 599px */
+        @media screen and (min-width: 400px) and (max-width: 599px) {
+            .principal-logo {
+                max-width: 200px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .hero h2 {
+                font-size: 18px;
+            }
+        }
+
+        /* Estilos para pantallas de 600px a 799px */
+        @media screen and (min-width: 600px) and (max-width: 799px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .hero h2 {
+                font-size: 20px;
+            }
+        }
+
+        /* Estilos para pantallas de 800px a 999px */
+        @media screen and (min-width: 800px) and (max-width: 999px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+
+        /* Estilos para pantallas de 1000px a 1199px */
+        @media screen and (min-width: 1000px) and (max-width: 1199px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+
+        /* Estilos para pantallas de 1200px en adelante */
+        @media screen and (min-width: 1200px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <img class="principal-logo" src="IMG/Luxtramas.png" alt="Logo de Luxtramas">
+            <h1>Luxtramas - Industria Colombiana</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Productos</a></li>
+                <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </center>
+    </header>
+    <nav class="barra">
+        <ul>
+        <div class="category_list">
+            <li><a href="tienda.html" id="categoryItem">Todo</a></li>
+            <li><a href="TIENDA/jabon.html" id="categoryItem">Jabón</a></li>
+            <li><a href="TIENDA/cloro.html" id="categoryItem">CloroMax</a></li>
+            <li><a href="TIENDA/lustra-muebles.html" id="categoryItem">Lustra-Muebles</a></li>
+            <li><a href="TIENDA/limpia-vidrios.html" id="categoryItem">Limpiavidrios</a></li>
+            <li><a href="TIENDA/varsol.html" id="categoryItem">Varsol</a></li>
+            <li><a href="TIENDA/alcohol.html" id="categoryItem">Alcohol Industrial</a></li>
+            <li><a href="TIENDA/creolina.html" id="categoryItem">Creolina</a></li>
+            <li><a href="TIENDA/desengrasante.html" id="categoryItem">Desengrasante</a></li>
+            <li><a href="TIENDA/lavaloza.html" id="categoryItem">Lavaloza</a></li>
+            <li><a href="TIENDA/otros.html" id="categoryItem">Otros</a></li>
+        </div>
+        </ul>
+    </nav>
+    <div class="products product-gallery">
+    <section class="contenido products-list">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item product" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/CLORO.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CLORO MAX 20L</p>
+                    <span class="precio">$ 30.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/JABON.jpeg" alt="">
+                    </div>
+                    <p class="descripcion" id>JABÓN PARA MANOS 3.8L</p>
+                    <span class="precio">$ 15.050</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/LAVALOZA.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">LAVALOZA 3.8L
+                    </p>
+                    <span class="precio">$ 19.950</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/VARSOL.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">VARSOL SIN OLOR 3L</p>
+                    <span class="precio">$ 40.000</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Lustra-Muebles-260.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">LUSTRAMUEBLES 260ML</p>
+                    <span class="precio">$ 3.900</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/jabon-manos-500.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">JÁBON PARA MANOS 500ML</p>
+                    <span class="precio">$ 4.050</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/jabon-manos-1000.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">JABÓN PARA MANOS 1L</p>
+                    <span class="precio">$ 6.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/jabon-manos-20L.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">JABÓN PARA MANOS 20L</p>
+                    <span class="precio">$ 31.000</span>
+                </div>
+            </div> 
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/blanqueador-3800.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CLOROMAX 3.8L</p>
+                    <span class="precio">$ 6.400</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Cubre-rasgunos-260.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CUBRERASGUÑOS 260ML</p>
+                    <span class="precio">$ 3.900</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Limpia-Vidrios-500.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">LIMPIAVIDRIOS 500ML CON PISTOLA</p>
+                    <span class="precio">$ 2.700</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Limpia-Vidrios-3800.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">LIMPIAVIDRIOS 3.8L</p>
+                    <span class="precio">$ 31.150</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Varsol-500.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">VARSOL PURO 500ML</p>
+                    <span class="precio">$ 4.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Varsol-750.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">VARSOL PURO 750ML</p>
+                    <span class="precio">$ 6.000</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Varsol-810.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">VARSOL PURO 810 ML</p>
+                    <span class="precio">$ 6.900</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Varsol-3000.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">VARSOL PURO 3L</p>
+                    <span class="precio">$ 23.100</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Varsol-sin-olor-500.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">VARSOL SIN OLOR 500ML</p>
+                    <span class="precio">$ 6.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Varsol-sin-olor-1000.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">VARSOL SIN OLOR 1L</p>
+                    <span class="precio">$ 11.700</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Alcohol-industrial-375.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">ALCOHOL INDUSTRIAL 375ML</p>
+                    <span class="precio">$ 2.550</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Alcohol-industrial-500.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">ALCOHOL INDUSTRIAL 500ML</p>
+                    <span class="precio">$ 3.400</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Alcohol-industrial-750.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">ALCOHOL INDUSTRIAL 750ML</p>
+                    <span class="precio">$ 4.600</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Alcohol-industrial-810.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">ALCOHOL INDUSTRIAL 810ML</p>
+                    <span class="precio">$ 5.200</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Creolina-250.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CREOLINA 250ML</p>
+                    <span class="precio">$ 2.300</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Creolina-20L.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CREOLINA 20L</p>
+                    <span class="precio">$ 78.700</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Desengrasante-500-pistola.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">DESENGRASANTE 500ML CON PISTOLA</p>
+                    <span class="precio">$ 3.750</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Desengrasante-500.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">DESENGRASANTE 3.8L</p>
+                    <span class="precio">$ 15.500</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Jabon-lavaloza-500.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">JABÓN LAVALOZA 500ML</p>
+                    <span class="precio">$ 3.850</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Jabon-lavaloza-800.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">JABÓN LAVALOZA 800ML</p>
+                    <span class="precio">$ 21.850</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Jabon-lavaloza-20L.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">JABÓN LAVALOZA 20L</p>
+                    <span class="precio">$ 101.700</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Balletilla-50x35-roja-1.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">BAYETILLA ROJA 50 X 35</p>
+                    <span class="precio">$ 1.800</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Balletilla-50x35-roja.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">BAYETILLA ROJA 50 X 75</p>
+                    <span class="precio">$ 3.150</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Balletilla-100x70-Roja.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">BAYETILLA ROJA 100 X 100</p>
+                    <span class="precio">$ 8.050</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Valde-10L.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">BALDE 10L</p>
+                    <span class="precio">$ 6.400</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Toalla-Limpion-40x60.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">TOALLA LIMPIÓN 40 X 60</p>
+                    <span class="precio">$ 4.400</span>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <button style="cursor: pointer;" onclick="location.href='https://wa.me/573175646070'">CONTACTAR CON UN ASESOR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <div class="contact-panel">
+    <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <p>Ciudad: Bogotá D.C. - Colombia</p>
+        <p>Teléfono: 3175646070</p>
+        <p>Correo electrónico: danielechiguasuquep@incodema.edu.co</p>
+        <br>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/people/Luxtramas/100093132830889/?sk=grid" class="icon1 fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></a>
+            <a href="https://instagram.com/luxtramas_aseo" class="icon2 fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></a>
+            <a href="https://wa.me/573175646070" class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></a>
+        </div>
+    </div>
+    <img src="IMG/Luxtramas.png" alt="Logo de la tienda" class="store-logo">
+</div>
+    <div class="floating-buttons">
+        <button onclick="location.href='https://wa.me/573175646070'" class="floating-button" id="button" style="cursor: pointer;">
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+        </button>
+    </div>
+    <footer>
+        <p>Daniel Chiguasuque - Todos los derechos reservados &copy; 2023</p>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script src="JS/filtrador.js"></script>
+</body>
+</html>

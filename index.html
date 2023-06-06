@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Luxtramas</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <style>
+        /* Estilos para pantallas de 200px a 399px */
+        @media screen and (min-width: 200px) and (max-width: 399px) {
+            .principal-logo {
+                max-width: 120px;
+            }
+            h1 {
+                font-size: 16px;
+            }
+            .hero h2 {
+                font-size: 14px;
+            }
+        }
+
+        /* Estilos para pantallas de 400px a 599px */
+        @media screen and (min-width: 400px) and (max-width: 599px) {
+            .principal-logo {
+                max-width: 200px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .hero h2 {
+                font-size: 18px;
+            }
+        }
+
+        /* Estilos para pantallas de 600px a 799px */
+        @media screen and (min-width: 600px) and (max-width: 799px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .hero h2 {
+                font-size: 20px;
+            }
+        }
+
+        /* Estilos para pantallas de 800px a 999px */
+        @media screen and (min-width: 800px) and (max-width: 999px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+
+        /* Estilos para pantallas de 1000px a 1199px */
+        @media screen and (min-width: 1000px) and (max-width: 1199px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+
+        /* Estilos para pantallas de 1200px en adelante */
+        @media screen and (min-width: 1200px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <img class="principal-logo" src="IMG/Luxtramas.png" alt="Logo de Luxtramas">
+            <h1>Luxtramas - Industria Colombiana</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Productos</a></li>
+                <li><a href="nosotros.html">¿Quiénes Somos?</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </center>
+    </header>
+
+    <section class="hero">
+        <h2>Bienvenido a nuestra tienda en línea</h2>
+        <p>Explora nuestra amplia selección de productos</p>
+        <a href="tienda.html" class="cta-button view-shop">Ver productos</a>
+    </section>
+
+    <section class="products">
+        <h2>Nuestros productos destacados</h2>
+        <br><br>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="IMG/CLORO.jpeg" alt="Producto 1">
+                <h3>Cloro Max 20L</h3>
+                <p>Precio: $30.000</p>
+                <a href="tienda/cloro.html" class="buy-button">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="IMG/LAVALOZA.jpeg" alt="Producto 2">
+                <h3>Lavaloza 3.8L</h3>
+                <p>Precio: $19.950</p>
+                <a href="tienda/lavaloza.html" class="buy-button">Comprar</a>
+            </div>
+            <div class="product">
+                <img src="IMG/JABON.jpeg" alt="Producto 3">
+                <h3>Jabón Líquido</h3>
+                <p>Precio: $15.050</p>
+                <a href="tienda/jabon.html" class="buy-button">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="partner-bar">
+        <h2>Distribuimos</h2>
+        <div class="partner-logos">
+            <img src="IMG/OSA.png" alt="Compañía 1">
+            <img src="IMG/JGB.png" alt="Compañía 2">
+            <img src="IMG/ELITE.png" alt="Compañía 3">
+            <img src="IMG/PROPAL.jpg" alt="Compañía 4">
+        </div>
+    </section>
+    <section class="products">
+        <h2>Política de Envíos</h2>
+        <br><br>
+        <div class="envios">
+            <h3>Envíos</h3>
+            <p>a) Solo realizamos envíos dentro del territorio nacional.</p>
+            <p>b) No se realizan envíos internacionales.</p>
+            <p>c) Los envíos se realizan a todas las regiones y ciudades dentro del país.</p>
+            <h3>Costo de envío</h3>
+            <p>a) El cliente será responsable de pagar el costo de envío.</p>
+            <p>b) El costo de envío se calculará en función del peso, dimensiones y destino del paquete.</p>
+            <p>c) El cliente será informado del costo de envío antes de finalizar la compra.</p>
+            <h3>Proceso de envío</h3>
+            <p>a) Una vez que se haya confirmado el pago de la compra, se procederá a preparar el paquete para su envío.</p>
+            <p>b) El tiempo estimado de procesamiento y preparación del paquete será informado al cliente durante el proceso de compra.</p>
+            <p>c) Una vez que el paquete esté listo para ser enviado, se coordinará con la empresa de transporte para su recogida y entrega.</p>
+            <h3>Tiempo de entrega</h3>
+            <p>a) El tiempo estimado de entrega dependerá de la ubicación del destino y del servicio de transporte seleccionado.</p>
+            <p>b) Se proporcionará al cliente una estimación del tiempo de entrega durante el proceso de compra.</p>
+            <p>c) Los retrasos en la entrega debido a circunstancias imprevistas o fuera de nuestro control (como condiciones climáticas adversas o problemas logísticos) no serán responsabilidad de la empresa, pero haremos todo lo posible para resolver cualquier problema que surja.</p>
+            <h3>Dirección de envío</h3>
+            <p>a) El cliente es responsable de proporcionar una dirección de envío precisa y completa al realizar la compra.</p>
+            <p>b) No nos hacemos responsables de los retrasos o problemas de entrega causados por una dirección de envío incorrecta o incompleta proporcionada por el cliente.</p>
+            <h3>Devoluciones y reembolsos</h3>
+            <p>a) No se aceptan devoluciones ni se ofrecen reembolsos para los costos de envío, ya que son responsabilidad del cliente.</p>
+            <p>b) Si el paquete es devuelto debido a una dirección de envío incorrecta o incompleta proporcionada por el cliente, se le ofrecerá al cliente la opción de reenviar el paquete, previo pago de los costos adicionales de envío.</p>
+        </div>
+    </section>
+    <div class="contact-panel">
+    <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <p>Ciudad: Bogotá D.C. - Colombia</p>
+        <p>Teléfono: 3175646070</p>
+        <p>Correo electrónico: danielechiguasuquep@incodema.edu.co</p>
+        <br>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/people/Luxtramas/100093132830889/?sk=grid" class="icon1 fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></a>
+            <a href="https://instagram.com/luxtramas_aseo" class="icon2 fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></a>
+            <a href="https://wa.me/573175646070" class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></a>
+        </div>
+    </div>
+    <img src="IMG/Luxtramas.png" alt="Logo de la tienda" class="store-logo">
+</div>
+    <div class="floating-buttons">
+        <button onclick="location.href='https://wa.me/573175646070'" class="floating-button" id="button" style="cursor: pointer;">
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+        </button>
+    </div>
+    <footer>
+        <p>Daniel Chiguasuque - Todos los derechos reservados &copy; 2023</p>
+    </footer>
+
+    <script src="JS/js.js"></script>
+</body>
+</html>
