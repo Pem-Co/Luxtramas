@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/all.css">
+    <title>Limpia Vidrios</title>
+    <style>
+        /* Estilos para pantallas de 200px a 399px */
+        @media screen and (min-width: 200px) and (max-width: 399px) {
+            .principal-logo {
+                max-width: 120px;
+            }
+            h1 {
+                font-size: 16px;
+            }
+            .hero h2 {
+                font-size: 14px;
+            }
+        }
+
+        /* Estilos para pantallas de 400px a 599px */
+        @media screen and (min-width: 400px) and (max-width: 599px) {
+            .principal-logo {
+                max-width: 200px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            .hero h2 {
+                font-size: 18px;
+            }
+        }
+
+        /* Estilos para pantallas de 600px a 799px */
+        @media screen and (min-width: 600px) and (max-width: 799px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            .hero h2 {
+                font-size: 20px;
+            }
+        }
+
+        /* Estilos para pantallas de 800px a 999px */
+        @media screen and (min-width: 800px) and (max-width: 999px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+
+        /* Estilos para pantallas de 1000px a 1199px */
+        @media screen and (min-width: 1000px) and (max-width: 1199px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            .hero h2 {
+                font-size: 28px;
+            }
+        }
+
+        /* Estilos para pantallas de 1200px en adelante */
+        @media screen and (min-width: 1200px) {
+            .principal-logo {
+                max-width: 250px;
+            }
+            h1 {
+                font-size: 36px;
+            }
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <img class="principal-logo" src="../IMG/Luxtramas.png" alt="Logo de Luxtramas">
+            <h1>Luxtramas - Industria Colombiana</h1>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../tienda.html">Productos</a></li>
+                <li><a href="../nosotros.html">¿Quiénes Somos?</a></li>
+                <li><a href="../contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </center>
+    </header>
+    <nav class="barra">
+        <ul>
+        <div class="category_list">
+            <li><a href="../tienda.html" id="categoryItem">Todo</a></li>
+            <li><a href="jabon.html" id="categoryItem">Jabón</a></li>
+            <li><a href="cloro.html" id="categoryItem">CloroMax</a></li>
+            <li><a href="lustra-muebles.html" id="categoryItem">Lustra-Muebles</a></li>
+            <li><a href="limpia-vidrios.html" id="categoryItem">Limpiavidrios</a></li>
+            <li><a href="varsol.html" id="categoryItem">Varsol</a></li>
+            <li><a href="alcohol.html" id="categoryItem">Alcohol Industrial</a></li>
+            <li><a href="creolina.html" id="categoryItem">Creolina</a></li>
+            <li><a href="desengrasante.html" id="categoryItem">Desengrasante</a></li>
+            <li><a href="lavaloza.html" id="categoryItem">Lavaloza</a></li>
+            <li><a href="otros.html" id="categoryItem">Otros</a></li>
+        </div>
+        </ul>
+    </nav>
+    <div class="titulosec">
+        <h1>Limpia Vidrios</h1>
+    </div>
+    <div class="products product-gallery">
+    <section class="contenido products-list">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/Limpia-Vidrios-500.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">LIMPIAVIDRIOS 500ML CON PISTOLA</p>
+                    <span class="precio">$ 2.700</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="../img/Limpia-Vidrios-3800.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">LIMPIAVIDRIOS 3.8L</p>
+                    <span class="precio">$ 31.150</span>
+                </div>
+            </div>
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="../img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <button style="cursor: pointer; justify-content: center; margin-left: 10px;" onclick="location.href='https://wa.me/573175646070'">CONTACTAR CON UN ASESOR</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <div class="contact-panel">
+    <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <p>Ciudad: Bogotá D.C. - Colombia</p>
+        <p>Teléfono: 3175646070</p>
+        <p>Correo electrónico: danielechiguasuquep@incodema.edu.co</p>
+        <br>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/people/Luxtramas/100093132830889/?sk=grid" class="icon1 fa-brands fa-facebook fa-2xl" style="color: #ffffff;"></a>
+            <a href="https://instagram.com/luxtramas_aseo" class="icon2 fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></a>
+            <a href="https://wa.me/573175646070" class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff;"></a>
+        </div>
+    </div>
+    <img src="../IMG/Luxtramas.png" alt="Logo de la tienda" class="store-logo">
+</div>
+    <div class="floating-buttons">
+        <button onclick="location.href='https://wa.me/573175646070'" class="floating-button" id="button" style="cursor: pointer;">
+            <i class="fa-brands fa-whatsapp fa-xl"></i>
+        </button>
+    </div>
+    <footer>
+        <p>Daniel Chiguasuque - Todos los derechos reservados &copy; 2023</p>
+    </footer>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/filtrador.js"></script>
+</body>
+</html>
